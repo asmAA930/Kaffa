@@ -1,0 +1,268 @@
+/*! ___________________________________________________________ 350 _______________________________________________________________________________**/
+
+
+@media (max-width: 1300px) {
+
+    /* _______________________________________________________ Header ____________________________________________ */
+    /*________ Navbar ________*/
+    header nav .container .navbar-brand {
+        width: 20%;
+    }
+
+    header nav.navbar .navbar-toggler {
+        border-color: var(--bs-success);
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+        padding-block: 10px;
+
+        transition: 1s;
+    }
+
+    header nav.navbar .navbar-toggler:focus {
+        box-shadow: none
+    }
+
+    header nav.navbar .navbar-toggler[aria-expanded=true] {
+        background-color: #fff;
+        border-color: #fff;
+    }
+
+    header nav.navbar .navbar-toggler span {
+        display: block;
+        width: 25px;
+        height: 2.5px;
+        background-color: var(--bs-success);
+    }
+
+
+    header nav.navbar .navbar-nav {
+        margin-top: 10px;
+        padding: 15px 25px;
+        border-radius: 5px;
+        background-color: #000;
+        text-align: center;
+    }
+
+    /* ________ Carousel ________  */
+    header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption h5 {
+        font-size: 1.9rem;
+    }
+
+    header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption p {
+        width: 90%;
+        margin-block: 1.25rem;
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+
+
+    /* _______________________________________________________ About ____________________________________________ */
+    #About .container .row .part2 .row .specialCard {
+        max-width: 290px;
+        margin: auto;
+    }
+
+    /* _______________________________________________________ Menu ____________________________________________ */
+    #Menu .container .content .nav {
+        width: max-content;
+    }
+
+    #Menu .container .content .tab-content .tab-pane .row .item .box {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    /* _______________________________________________________ Beans_Coffee ______________________________________________ */
+    #Beans_Coffee h2 {
+        font-size: 22px;
+    }
+
+    #Beans_Coffee h3 {
+        font-size: 25px;
+    }
+
+    #Beans_Coffee i {
+        font-size: 50px;
+    }
+
+    #VideoModal .modal-dialog {
+        max-width: 90%;
+    }
+
+
+}
+
+
+/*! ___________________________________________________________ 450 _______________________________________________________________________________ **/
+
+@media (min-width: 371px) and (max-width: 1300px) {
+
+    /* _______________________________________________________ Services ____________________________________________ */
+    #Services .container .content .box2 .item img {
+        max-width: 70%;
+    }
+
+    /* _______________________________________________________ Menu ____________________________________________ */
+
+    #Menu .container .content .tab-content .tab-pane .row .item .box {
+        max-width: 70%;
+    }
+
+    /* _______________________________________________________ Beans_Coffee ______________________________________________ */
+    #Beans_Coffee h2 {
+        font-size: 30px;
+    }
+
+    #Beans_Coffee h3 {
+        font-size: 40px;
+    }
+
+    #Beans_Coffee i {
+        font-size: 70px;
+    }
+}
+
+
+/*! ___________________________________________________________ 650 _______________________________________________________________________________**/
+
+@media (min-width: 577px) and (max-width: 1300px) {
+
+    /* _______________________________________________________ Header ____________________________________________ */
+    /*________ Navbar ________*/
+    header nav .container .navbar-brand {
+        width: 80px;
+    }
+
+    header nav.navbar .navbar-toggler {
+        background-color: transparent;
+
+    }
+
+    /* ________ Carousel ________  */
+    header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption h5 {
+        font-size: 2.5rem;
+    }
+
+    /* _______________________________________________________ Menu ____________________________________________ */
+
+    #Menu .container .content .tab-content .tab-pane .row .item .box {
+        max-width: initial;
+    }
+
+    /* _______________________________________________________ Beans_Coffee ______________________________________________ */
+    #Beans_Coffee h2 {
+        font-size: 40px;
+    }
+
+    #Beans_Coffee h3 {
+        font-size: 50px;
+    }
+
+    #Beans_Coffee i {
+        font-size: 80px;
+    }
+
+    #VideoModal .modal-dialog {
+        max-width: 70%;
+    }
+
+}
+
+
+/*! ___________________________________________________________ 850 _______________________________________________________________________________ **/
+
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    /* _______________________________________________________ Header ____________________________________________ */
+    /*________ Navbar ________*/
+    header nav .container .navbar-brand {
+        width: 83px;
+    }
+
+    /* ________ Carousel ________  */
+    header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption h5 {
+        font-size: 3.25rem;
+    }
+
+    /* _______________________________________________________ Services ____________________________________________ */
+    #Services .container .content .box2 .item img {
+        max-width: 50%;
+    }
+
+    /* _______________________________________________________ Beans_Coffee ______________________________________________ */
+    #Beans_Coffee h2 {
+        font-size: 50px;
+    }
+
+    #Beans_Coffee h3 {
+        font-size: 60px;
+    }
+
+    #Beans_Coffee i {
+        font-size: 90px;
+    }
+
+    /* _______________________________________________________ Book ______________________________________________ */
+    #Book .container .content .box2 form {
+        width: 90%;
+
+    }
+
+}
+
+/*! __________________________________________________________ 1050 _______________________________________________________________________________ **/
+
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    /* _______________________________________________________ Header ____________________________________________ */
+    /*________ Navbar ________*/
+    header nav .container .navbar-brand {
+        width: 80px;
+    }
+
+    header nav.navbar .navbar-toggler {
+        display: none;
+    }
+
+    header nav.navbar .navbar-nav {
+        background-color: transparent;
+    }
+
+    /* ________ Carousel ________  */
+    header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption h5 {
+        font-size: 4rem;
+    }
+
+    /* _______________________________________________________ Services ____________________________________________ */
+    #Services .container .content .box2 .item img {
+        max-width: 100%;
+    }
+
+    /* _______________________________________________________ Beans_Coffee ______________________________________________ */
+    #VideoModal .modal-dialog {
+        max-width: 60%;
+    }
+
+    /* _______________________________________________________ Book ______________________________________________ */
+    #Book .container .content .box2 form {
+        width: 80%;
+
+    }
+}
+
+
+/*! __________________________________________________________ 1250 _______________________________________________________________________________ **/
+
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+
+    /* _______________________________________________________ Header ____________________________________________ */
+    /*________ Navbar ________*/
+    header nav .container .navbar-brand {
+        width: 90px;
+    }
+
+
+
+}

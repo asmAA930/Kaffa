@@ -1,0 +1,39 @@
+/* not used because initialized in bootstrap.css 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+*/
+
+
+body {
+    font-family: "Oswald", sans-serif;
+    height: 2000px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sansita Swashed", system-ui;
+    letter-spacing: 1px;
+}
+
+
+span.text {
+    position: relative;
+    z-index: 2;
+}
+
+.title h2{
+    font-size: 40px;
+
+}
+

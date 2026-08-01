@@ -1,0 +1,674 @@
+/* _______________________________________________________ Start_Header ____________________________________________ */
+
+
+/*________ Start_Navbar ________*/
+
+header nav.navbar {
+    width: 100%;
+    padding: 20px 0;
+
+    z-index: 2;
+}
+
+header nav .container .navbar-brand {
+    width: 90px;
+}
+
+header nav.navbar .navbar-nav {
+    column-gap: 20px;
+}
+
+header nav .container .nav-item .nav-link {
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+header nav .container .nav-item .nav-link::before,
+header nav .container .nav-item .nav-link span.shape,
+header nav .container .nav-item .nav-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100%/3);
+    position: absolute;
+    background-color: var(--bs-success);
+    border: 1px solid var(--bs-success);
+
+    transition-duration: 0.5s;
+}
+
+header nav .container .nav-item .nav-link::before {
+    top: 0;
+    left: -100%;
+}
+
+header nav .container .nav-item .nav-link span.shape {
+    top: calc(100%/3);
+    left: 100%;
+}
+
+header nav .container .nav-item .nav-link::after {
+    bottom: 0;
+    left: -100%;
+}
+
+header nav .container .nav-item .nav-link:hover:before,
+header nav .container .nav-item .nav-link:hover span.shape,
+header nav .container .nav-item .nav-link:hover:after {
+    left: 0;
+}
+
+/*________ End_Navbar ________*/
+
+
+/* ________ Start_Carousel ________ */
+
+header #HeaderCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item:nth-of-type(1) {
+    background-image: url("../images/banner1.jpg");
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item:nth-of-type(2) {
+    background-image: url("../images/banner2.jpg");
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item:nth-of-type(3) {
+    background-image: url("../images/banner3.jpg");
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item:nth-of-type(4) {
+    background-image: url("../images/banner4.jpg");
+}
+
+/* layout on background */
+header #HeaderCarousel .carousel-inner .carousel-item::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption {
+    position: initial;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption>* {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item.active .container .carousel-caption>* {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption h5 {
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption p {
+    letter-spacing: 1.5px;
+    width: 80%;
+    margin-block: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: lighter;
+
+    transition-delay: 0.2s;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons {
+    transition-delay: 0.4s;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons a {
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons a::before,
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+
+    border: 22px solid var(--bs-success);
+    transition-duration: 0.8s;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons a::before {
+    right: 100%;
+    border-right-color: transparent;
+
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons a:hover::before {
+    right: 0;
+}
+
+
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons a span.text {
+    transition-duration: 0.8s;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons a:hover span.text {
+    color: #fff;
+}
+
+
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons a::after {
+    left: 100%;
+    border-left-color: transparent;
+}
+
+header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-caption .buttons a:hover::after {
+    left: 0;
+}
+
+/* ________End_Carousel ________ */
+
+/* _______________________________________________________ End_Header ______________________________________________ */
+
+
+/* _______________________________________________________ Start_About _____________________________________________ */
+
+#About {
+    background-color: var(--bs-success);
+    background-image: url("../images/leaves_pattern.png");
+}
+
+/* ______________________ part1 ______________________ */
+#About .container .row .part1 .item span {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+#About .container .row .part1 .item h2 {
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+#About .container .row .part1 .item p {
+    letter-spacing: 1px;
+}
+
+#About .container .row .part1 .item button {
+    position: relative;
+    overflow: hidden;
+}
+
+
+#About .container .row .part1 .item button::before,
+#About .container .row .part1 .item button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 0;
+
+    transition-duration: 0.5s;
+
+}
+
+#About .container .row .part1 .item button::before {
+    top: -50%;
+}
+
+#About .container .row .part1 .item button:hover::before {
+    top: 0%;
+}
+
+#About .container .row .part1 .item button span.text {
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+
+#About .container .row .part1 .item button:hover span.text {
+    color: var(--bs-success);
+}
+
+#About .container .row .part1 .item button::after {
+    bottom: -50%;
+}
+
+#About .container .row .part1 .item button:hover::after {
+    bottom: 0%;
+}
+
+/* ______________________ part2 ______________________ */
+
+#About .container .row .part2 .row .specialCard .item {
+    max-width: 230px;
+    margin: auto;
+    position: relative;
+}
+
+
+#About .container .row .part2 .row .specialCard .item .front,
+#About .container .row .part2 .row .specialCard .item .back {
+    backface-visibility: hidden;
+    transition-duration: 1s;
+}
+
+/* ___________ front ______________ */
+
+#About .container .row .part2 .row .specialCard .item .front {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#About .container .row .part2 .row .specialCard:nth-of-type(1) .item .front {
+    background-image: url("../images/about_front_01.jpg");
+}
+
+#About .container .row .part2 .row .specialCard:nth-of-type(2) .item .front {
+    background-image: url("../images/about_front_02.jpg");
+}
+
+#About .container .row .part2 .row .specialCard:nth-of-type(3) .item .front {
+    background-image: url("../images/about_front_03.jpg");
+}
+
+#About .container .row .part2 .row .specialCard .item:hover .front {
+    transform: rotateY(180deg);
+}
+
+/* ___________ back ______________ */
+
+#About .container .row .part2 .row .specialCard .item .back {
+    transform: rotateY(180deg);
+}
+
+#About .container .row .part2 .row .specialCard .item:hover .back {
+    transform: rotateY(0deg);
+}
+
+
+#About .container .row .part2 .row .specialCard .item .back .body {
+    padding: 10px 15px 20px;
+
+}
+
+#About .container .row .part2 .row .specialCard:nth-of-type(1) .item .back .body {
+    background-color: #404042;
+}
+
+#About .container .row .part2 .row .specialCard:nth-of-type(2) .item .back .body {
+    background-color: #87744A;
+}
+
+#About .container .row .part2 .row .specialCard:nth-of-type(3) .item .back .body {
+    background-color: #6D1F37;
+}
+
+#About .container .row .part2 .row .specialCard .item .back .body button,
+#About .container .row .part2 .row .specialCard .item .back .body button i {
+    transition-duration: 0.5s;
+}
+
+#About .container .row .part2 .row .specialCard .item .back .body button {
+    color: #fff;
+    padding: 5px 20px;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+}
+
+#About .container .row .part2 .row .specialCard .item .back .body button:hover {
+    background-color: #fff;
+    font-weight: normal;
+}
+
+#About .container .row .part2 .row .specialCard:nth-of-type(1) .item .back .body button:hover {
+    color: #404042;
+
+}
+
+#About .container .row .part2 .row .specialCard:nth-of-type(2) .item .back .body button:hover {
+    color: #87744A;
+
+}
+
+#About .container .row .part2 .row .specialCard:nth-of-type(3) .item .back .body button:hover {
+    color: #6D1F37;
+
+}
+
+#About .container .row .part2 .row .specialCard .item .back .body button:hover i {
+    margin-left: 5px;
+}
+
+/* _______________________________________________________ End_About _______________________________________________ */
+
+
+/* _______________________________________________________ Start_Services ___________________________________________ */
+
+#Services {
+    background-image: url("../images/services-beans_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Services::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+#Services .container {
+    position: relative;
+}
+
+#Services .container .content [class*="box"] .item .row .icon .item i {
+    font-size: 40px;
+}
+
+#Services .container .content [class*="box"] .item .row .description .item p {
+    color: #c4c4c4;
+    font-weight: lighter;
+}
+
+#Services .container .content .box2 .item img {
+    animation-name: "up_down";
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* _______________________________________________________ End_Services _____________________________________________ */
+
+
+/* _______________________________________________________ Start_Menu ____________________________________________ */
+
+#Menu {
+    background-color: var(--bs-success);
+    background-image: url("../images/leaves_pattern.png");
+}
+
+#Menu .container .content .nav {
+    width: fit-content;
+    margin: auto;
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    column-gap: 15px;
+}
+
+#Menu .container .content .nav button {
+    border-radius: 5px;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+#Menu .container .content .nav button:hover,
+#Menu .container .content .nav button.active {
+    background-color: #fff;
+    color: var(--bs-success);
+}
+
+#Menu .container .content .tab-content .tab-pane .row .item .box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transform: scale(0);
+    transition-duration: 1s;
+}
+
+/* when using .active (transform: scale(1);) its effect not work 
+because element has display:none when has .active  display:block 
+.show work after .active
+*/
+#Menu .container .content .tab-content .tab-pane.show .row .item .box {
+    transform: scale(1);
+}
+
+#Menu .container .content .tab-content .row .item .box img {
+    display: block;
+    margin: auto;
+    transform: scale(0.8);
+    transition-duration: 1s;
+}
+
+#Menu .container .content .tab-content .row .item:hover .box img {
+    transform: scale(1.1);
+}
+
+#Menu .container .content .tab-content .row .item .box h6,
+#Menu .container .content .tab-content .row .item .box p {
+    background-color: var(--bs-success);
+    background-image: url("../images/leaves_pattern.png");
+    border-radius: 0 5px 5px 0;
+    padding: 5px;
+
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+
+    transition-duration: 1s;
+}
+
+#Menu .container .content .tab-content .row .item .box h6 {
+    top: 10px;
+}
+
+#Menu .container .content .tab-content .row .item .box p {
+    bottom: 10px;
+}
+
+#Menu .container .content .tab-content .row .item:hover .box h6,
+#Menu .container .content .tab-content .row .item:hover .box p {
+    transform: translateX(0%);
+}
+
+/* _______________________________________________________ End_Menu ______________________________________________ */
+
+
+/* _______________________________________________________ Start_Beans_Coffee ______________________________________________ */
+#Beans_Coffee {
+    background-image: url(../images/Beans_ice_drinks_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Beans_Coffee::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(11, 12, 11, 0.5);
+}
+
+#Beans_Coffee h2 {
+    text-shadow: 1px 1.5px 1px #362D27;
+    font-size: 75px;
+}
+
+#Beans_Coffee h3 {
+    font-size: 55px;
+}
+
+#Beans_Coffee i {
+    font-size: 90px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+#Beans_Coffee i:hover {
+    color: var(--bs-success);
+}
+
+#VideoModal .modal-dialog {
+    max-width: 50%;
+    margin: auto;
+}
+
+#VideoModal .modal-dialog .modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#VideoModal .modal-dialog .modal-content video {
+    width: 100%;
+    display: block;
+}
+
+/* _______________________________________________________ End_Beans_Coffee ______________________________________________ */
+
+
+/* _______________________________________________________ Start_Book ______________________________________________ */
+
+#Book {
+    background-image: url("../images/Book_black_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Book .container .content .box1 {
+    
+}
+
+#Book .container .content .box2 {
+    background-color: var(--bs-success);
+    background-image: url("../images/leaves_pattern.png");
+    border-radius: 10px;
+}
+
+#Book .container .content .box2 form {
+    width: 80%;
+    margin: auto;
+
+}
+
+#Book .container .content .box2 form input::placeholder,
+#Book .container .content .box2 form input,
+#Book .container .content .box2 form textarea::placeholder,
+#Book .container .content .box2 form textarea {
+    font-weight: lighter;
+    color: #595C5F;
+}
+
+#Book .container .content .box2 form textarea {
+    resize: none;
+}
+
+#Book .container .content .box2 form button {
+    background-color: #212529;
+    color: #fff;
+    position: relative;
+    border: 0;
+    overflow: hidden;
+}
+
+#Book .container .content .box2 form button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-success);
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition-duration: 1s;
+}
+
+#Book .container .content .box2 form button:hover::before {
+    top: 0%;
+}
+
+
+/* _______________________________________________________ End_Book ______________________________________________ */
+
+
+/* _______________________________________________________ Start_Footer______________________________________________ */
+footer {
+    background-color: #333333;
+    letter-spacing: 0.5px;
+}
+
+/* _______________________________________________________ End_Footer________________________________________________ */
+
+
+/* ________ Start_up_button ________ */
+.up {
+    left: auto;
+}
+
+/* using (left: auto;) because .fixed-bottom has (right: 0; left: 0; )
+this make its width 100%  */
+
+.up a {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 5px 2px rgba(4, 255, 4, 0.696);
+    text-shadow: 0 0 5px rgb(4, 255, 4, 0.696);
+    cursor: pointer;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.up a:hover {
+    transform: scale(1.1);
+}
+
+.up a i:nth-of-type(1) {
+    margin-bottom: -10px;
+    transition-duration: 0.5s;
+}
+
+.up a:hover i:nth-of-type(1) {
+    margin-bottom: -5px;
+}
+
+/* ________ End_up_button ________ */
