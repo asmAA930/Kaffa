@@ -574,35 +574,36 @@ because element has display:none when has .active  display:block
     background-repeat: no-repeat;
 }
 
-#Book .container .content .box1 {
-    
-}
-
-#Book .container .content .box2 {
+#Book .container .content .box {
     background-color: var(--bs-success);
     background-image: url("../images/leaves_pattern.png");
     border-radius: 10px;
 }
 
-#Book .container .content .box2 form {
+#Book .container .content .box form {
     width: 80%;
     margin: auto;
 
 }
 
-#Book .container .content .box2 form input::placeholder,
-#Book .container .content .box2 form input,
-#Book .container .content .box2 form textarea::placeholder,
-#Book .container .content .box2 form textarea {
+#Book .container .content .box form input:focus,
+#Book .container .content .box form textarea:focus {
+    box-shadow: none;
+}
+
+#Book .container .content .box form input::placeholder,
+#Book .container .content .box form input,
+#Book .container .content .box form textarea::placeholder,
+#Book .container .content .box form textarea {
     font-weight: lighter;
     color: #595C5F;
 }
 
-#Book .container .content .box2 form textarea {
+#Book .container .content .box form textarea {
     resize: none;
 }
 
-#Book .container .content .box2 form button {
+#Book .container .content .box form button {
     background-color: #212529;
     color: #fff;
     position: relative;
@@ -610,7 +611,7 @@ because element has display:none when has .active  display:block
     overflow: hidden;
 }
 
-#Book .container .content .box2 form button::before {
+#Book .container .content .box form button::before {
     content: "";
     display: block;
     width: 100%;
@@ -623,10 +624,9 @@ because element has display:none when has .active  display:block
     transition-duration: 1s;
 }
 
-#Book .container .content .box2 form button:hover::before {
+#Book .container .content .box form button:hover::before {
     top: 0%;
 }
-
 
 /* _______________________________________________________ End_Book ______________________________________________ */
 
@@ -636,7 +636,6 @@ footer {
     background-color: #333333;
     letter-spacing: 0.5px;
 }
-
 /* _______________________________________________________ End_Footer________________________________________________ */
 
 
