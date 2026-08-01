@@ -983,11 +983,9 @@
     <!-- _______________________________________________________ End_Beans_Coffee ______________________________________________ -->
 
 
-
     <!-- _______________________________________________________ Start_Book ____________________________________________ -->
-    <section id="Book">
-
-        <div class="container py-4 py-lg-5 text-light">
+     <section id="Book">
+        <div class="container pt-4 pt-lg-5 text-light">
 
             <div class="title pb-5 text-center">
                 <h2>Book Now</h2>
@@ -996,44 +994,47 @@
 
             <div class="content row">
 
-                <div class="col-md-6 col-lg-7">
-                    <img src="images/Book_girl.png" class="img-fluid" alt="Book_girl">
+                <div class="col-sm-6 col-xl-7  position-relative  d-none d-sm-block">
+                    <img src="images/Book_girl.png" class="img-fluid position-absolute bottom-0" alt="Book_girl">
                 </div>
 
-                <div class="box2 col-md-6 col-lg-5">
-                    <form method="post" class="py-4">
-                        <h3 class="mb-4 text-center">Booking a table</h3>
-                        <div class="form-goup mb-3">
-                            <input type="text" class="form-control" name="Name" required placeholder="Name *">
-                        </div>
+                <div class=" col-sm-6 col-xl-5  pb-4 pb-lg-5 ">
+                    <div class="box">
+                        <form method="get" class="py-4">
+                            <h3 class="mb-4 text-center">Booking a table</h3>
+                            <div class="form-goup mb-3">
+                                <input type="text" class="form-control" name="Name" required placeholder="Name *">
+                            </div>
 
-                        <div class="form-goup mb-3">
-                            <input type="text" class="form-control" name="Phone" required placeholder="Phone *">
-                        </div>
+                            <div class="form-goup mb-3">
+                                <input type="text" class="form-control" name="Phone" required placeholder="Phone *">
+                            </div>
 
-                        <div class="form-goup mb-3">
-                            <input type="number" min="1" class="form-control" name="Number-of-people" required
-                                placeholder="How many people *">
-                        </div>
+                            <div class="form-goup mb-3">
+                                <input type="number" min="1" class="form-control" name="Number-of-people" required
+                                    placeholder="How many people *">
+                            </div>
 
-                        <div class="form-goup mb-3">
-                            <input type="datetime-local" class="form-control" name="Date" required>
-                        </div>
+                            <div class="form-goup mb-3">
+                                <input type="datetime-local" class="form-control" name="Date" required>
+                            </div>
 
-                        <div class="form-goup mb-3">
-                            <textarea class="form-control" name="Message" required placeholder="Message"
-                                rows="10"></textarea>
-                        </div>
+                            <div class="form-goup mb-3">
+                                <textarea class="form-control" name="Message" required placeholder="Message"
+                                    rows="10"></textarea>
+                            </div>
 
-                        <div class="form-goup">
-                            <button type="submit" class="btn w-100">
-                                <span class="text">Book Now</span>
-                            </button>
-                        </div>
-
-                    </form>
+                            <div class="form-goup">
+                                <button type="submit" class="btn w-100">
+                                    <span class="text">Book Now</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+
             </div>
+
         </div>
     </section>
     <!-- _______________________________________________________ End_Book ______________________________________________ -->
