@@ -275,7 +275,7 @@ header #HeaderCarousel .carousel-inner .carousel-item .container .carousel-capti
 #About .container .row .part2 .row .specialCard .item .front,
 #About .container .row .part2 .row .specialCard .item .back {
     backface-visibility: hidden;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
 }
 
 /* ___________ front ______________ */
