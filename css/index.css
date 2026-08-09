@@ -524,7 +524,7 @@ because element has display:none when has .active  display:block
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(11, 12, 11, 0.5);
+    background-color: rgb(33, 32, 32, 0.5);
 }
 
 #Beans_Coffee h2 {
@@ -574,44 +574,49 @@ because element has display:none when has .active  display:block
     background-repeat: no-repeat;
 }
 
-#Book .container .content .box {
+#Book .container .content .part1 .box {
     background-color: var(--bs-success);
     background-image: url("../images/leaves_pattern.png");
     border-radius: 10px;
 }
 
-#Book .container .content .box form {
+#Book .container .content .part1 .box form {
     width: 80%;
     margin: auto;
 
 }
 
-#Book .container .content .box form input:focus,
-#Book .container .content .box form textarea:focus {
+#Book .container .content .part1 .box form input:focus,
+#Book .container .content .part1 .box form textarea:focus {
     box-shadow: none;
 }
 
-#Book .container .content .box form input::placeholder,
-#Book .container .content .box form input,
-#Book .container .content .box form textarea::placeholder,
-#Book .container .content .box form textarea {
+#Book .container .content .part1 .box form input::placeholder,
+#Book .container .content .part1 .box form input,
+#Book .container .content .part1 .box form textarea::placeholder,
+#Book .container .content .part1 .box form textarea {
     font-weight: lighter;
     color: #595C5F;
 }
 
-#Book .container .content .box form textarea {
+#Book .container .content .part1 .box form textarea {
     resize: none;
 }
 
-#Book .container .content .box form button {
+#Book .container .content .part1 .box form button {
     background-color: #212529;
     color: #fff;
     position: relative;
-    border: 0;
     overflow: hidden;
+    border-color: var(--bs-success);
+    transition-duration: 0.5s;
 }
 
-#Book .container .content .box form button::before {
+#Book .container .content .part1 .box form button:hover {
+    border-color: #fff;
+}
+
+#Book .container .content .part1 .box form button::before {
     content: "";
     display: block;
     width: 100%;
@@ -621,12 +626,13 @@ because element has display:none when has .active  display:block
     position: absolute;
     left: 0;
     top: 100%;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
-#Book .container .content .box form button:hover::before {
+#Book .container .content .part1 .box form button:hover::before {
     top: 0%;
 }
+
 
 /* _______________________________________________________ End_Book ______________________________________________ */
 
@@ -636,6 +642,7 @@ footer {
     background-color: #333333;
     letter-spacing: 0.5px;
 }
+
 /* _______________________________________________________ End_Footer________________________________________________ */
 
 
